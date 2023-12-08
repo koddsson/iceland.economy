@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Page title</title>
+
+    <style>
+      #graph {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="graph">
+      {% chart graph.inflation graph.interestRates %}
+    </div>
+  </body>
+</html>
