@@ -25,6 +25,7 @@ module.exports = function (eleventyConfig) {
     const chartParams = new URLSearchParams(`width=500&height=300`);
     chartParams.set("chart", JSON.stringify(chartData));
     chartParams.set("backgroundColor", "white");
+    chartParams.set('format', 'svg');
     chartURL.search = chartParams.toString();
 
     return `<img src="${chartURL.toString()}">`;
